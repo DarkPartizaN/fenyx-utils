@@ -9,22 +9,22 @@ import java.util.Random;
  */
 public class MathUtils {
 
-    private static final Random RANDOM = new Random();
+    private static final Random rnd = new Random();
 
     public static int random_int(int min, int max) {
-        return min + RANDOM.nextInt(1 + max - min);
+        return min + rnd.nextInt(1 + max - min);
     }
 
     public static float random_float(float min, float max) {
-        return min + RANDOM.nextFloat() * (1.0F + max - min);
+        return min + rnd.nextFloat() * (1.0F + max - min);
     }
 
     public static double random_double(double min, double max) {
-        return min + RANDOM.nextDouble() * (1.0D + max - min);
+        return min + rnd.nextDouble() * (1.0D + max - min);
     }
 
     public static long random_long(long min, long max) {
-        return min + Math.abs(RANDOM.nextLong()) % (1L + max - min);
+        return min + Math.abs(rnd.nextLong()) % (1L + max - min);
     }
 
     public static int random_color() {

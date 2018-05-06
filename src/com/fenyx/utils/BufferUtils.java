@@ -17,7 +17,7 @@ public class BufferUtils {
     }
 
     public static LongBuffer createLongBuffer(int size) {
-        LongBuffer buff = createByteBuffer(size * 4).asLongBuffer();
+        LongBuffer buff = createByteBuffer(size * 8).asLongBuffer();
 
         return buff;
     }
@@ -29,7 +29,7 @@ public class BufferUtils {
     }
 
     public static DoubleBuffer createDoubleBuffer(int size) {
-        DoubleBuffer buff = createByteBuffer(size * 4).asDoubleBuffer();
+        DoubleBuffer buff = createByteBuffer(size * 8).asDoubleBuffer();
 
         return buff;
     }
